@@ -1,0 +1,90 @@
+body{
+  background: #454545;
+}
+
+a,body{
+  color: #eeee
+}
+
+a{
+  text-decoration: none;
+}
+
+.side-bar{
+  float: left;
+  width: 20;
+  position: fixed;
+}
+
+.side-bar > *{
+  padding: 10px 15px;
+}
+
+.side-bar .nav a,
+.side-bar .tag-list a
+{
+  display: block;
+  padding: 5px;
+  color: #888;
+  -webkit-transition: color200ms;
+  -o-transition: color200ms;
+  transition: color200ms;
+}
+
+.side-bar .nav a:hover,
+.side-bar .tag-list a:hover
+{
+  color:#eeee
+}
+
+.header .logo{
+  border: 5px solid #eeee;
+  padding: 10px 20px;
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.main{
+  float: right;
+  width: 80%;
+}
+
+.article-list{
+  background: #ffff;
+  margin-right: 30%;
+  padding: 10px 30px;
+  color: #404040;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.article-list .item >*,
+.article >*
+
+{
+  margin: 20px 0;
+}
+
+.article-list .item .title{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.article-list .item .status,
+.article .status
+{
+  color:#aaa;
+  font-size: 15px;
+}
+
+.article-list a{
+  color: #454545
+}
+
+.article{
+  background: #ffff;
+  margin-right: 30%;
+  padding: 10px 30px;
+  color: #404040;
+}
