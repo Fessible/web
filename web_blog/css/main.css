@@ -2,6 +2,10 @@ body{
   background: #454545;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 a,body{
   color: #eeee
 }
@@ -87,4 +91,8 @@ a{
   margin-right: 30%;
   padding: 10px 30px;
   color: #404040;
+}
+
+#menu-checkbox,#menu-toggle{
+  display: none;
 }
