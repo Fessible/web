@@ -28,3 +28,13 @@ img{
   max-width: 100%;
   display: block;
 }
+
+.news-list-item .title{
+  font-size: 30px;
+}
+
+.news-list-item .avatar{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
