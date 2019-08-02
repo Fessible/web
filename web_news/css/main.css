@@ -1,0 +1,30 @@
+.contanier {
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+.navbar-brand {
+  background-image: url(../img/logo.png);
+  width: 50px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover
+{
+  background-color: #ea0c3c;
+  border: 0
+}
+
+.list-group-item,img{
+  /* 圆角 */
+  border-radius: 3px
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
