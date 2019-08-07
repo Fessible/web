@@ -13,28 +13,127 @@
 
 .list-group-item.active,
 .list-group-item.active:focus,
-.list-group-item.active:hover
-{
+.list-group-item.active:hover {
   background-color: #ea0c3c;
   border: 0
 }
 
-.list-group-item,img{
+.list-group-item, img {
   /* 圆角 */
-  border-radius: 3px
+  border-radius: 3px;
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
 }
 
-.news-list-item .title{
-  font-size: 30px;
+/* 新闻列表下的所有图片效果 */
+.news-list-item img {
+  height: 150px
 }
 
-.news-list-item .avatar{
+.news-list-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 设置第一个 */
+.news-list-item:first-child {
+  padding-top: 0;
+}
+
+.news-list-item .title {
+  font-size: 30px;
+  color: #444;
+}
+
+.news-list-item .title:hover {
+  color: #337ab7;
+  background:
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.news-list-item .avatar {
   width: 20px;
   height: 20px;
+  /* 让图片和文字显示在一行里 */
   display: inline-block;
+}
+
+.side-bar-card {
+  background-color: #eeee;
+  margin-top: 50px;
+  padding: 10px 0;
+}
+
+.side-bar-card .flag{
+  font-size: 25px;
+  margin-bottom: 20px
+}
+
+.side-bar-card .card-title{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.side-bar-card .list .list-item .title{
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+.side-bar-card .list .list-item{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card-body .list .list-item:hover{
+  background: rgba(0, 0, 0, .1);
+}
+
+.news-title{
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.news-status{
+  color: #999
+}
+
+.news-status .label{
+  opacity: 0.7
+}
+
+.news-content{
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.news-content img{
+  margin: 10px 0;
+}
+
+.footer-content{
+  margin: 10px 0;
+  text-align: center;
+  font-size: 10px;
+  color: #999;
+  /* 清除浮动效果 */
+  clear: both;
+}
+
+/* 登录页 */
+.container-small{
+  max-width: 500px;
+}
+
+h1{
+  text-align: center;
 }
