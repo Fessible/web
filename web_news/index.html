@@ -19,34 +19,43 @@
         </a>
       </div>
 
-      <!-- 标准导航栏排列 -->
-      <ul class="nav navbar-nav">
-        <li> <a href="#">首页</a></li>
-        <li> <a href="#">国内</a></li>
-        <li> <a href="#">国际</a></li>
-        <li> <a href="#">社会</a></li>
-      </ul>
+      <label for="toggle-checkbox" id="toggle-menu">menu</label>
+      <input type="checkbox" id="toggle-checkbox"value="">
+      <div class="hidden-xs">
+        <!-- 标准导航栏排列 -->
+        <ul class="nav navbar-nav">
+          <li> <a href="#">首页</a></li>
+          <li> <a href="#">国内</a></li>
+          <li> <a href="#">国际</a></li>
+          <li> <a href="#">社会</a></li>
+        </ul>
 
-      <!-- 排列到右侧-->
-      <ul class="nav navbar-nav navbar-right">
-      <li><a href="login.html">登录</a></li>
-        <li><a href="sign.html">注册</a></li>
-      </ul>
+        <!-- 排列到右侧-->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html">登录</a></li>
+          <li><a href="register.html">注册</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <div class="contanier">
 
-    <!-- 侧边栏 -->
-    <div class="col-sm-2">
-      <ul class="list-group">
-        <a href="#" class="list-group-item active">全部</a>
-        <a href="#" class="list-group-item">电影</a>
-        <a href="#" class="list-group-item">明星</a>
-        <a href="#" class="list-group-item">国际</a>
-        <a href="#" class="list-group-item">科技</a>
-      </ul>
+<!-- 隐藏 -->
+    <div class="hidden-xs">
+      <!-- 侧边栏 -->
+      <div class="col-sm-2">
+        <ul class="list-group">
+          <a href="#" class="list-group-item active">全部</a>
+          <a href="#" class="list-group-item">电影</a>
+          <a href="#" class="list-group-item">明星</a>
+          <a href="#" class="list-group-item">国际</a>
+          <a href="#" class="list-group-item">科技</a>
+        </ul>
+      </div>
+
     </div>
+
     <!-- 新闻内容 -->
     <div class="col-sm-7">
       <div class="news-list">
@@ -130,7 +139,7 @@
   <!-- 右侧侧边栏 -->
   <div class="col-sm-3">
     <div class="search-bar">
-      <input type="search" class="form-control">
+      <input type="search" class="form-control" placeholder="搜一下">
     </div>
     <!-- 清除默认布局 -->
     <div class="side-bar-card clearfix">

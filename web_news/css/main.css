@@ -71,56 +71,56 @@ a:hover {
   padding: 10px 0;
 }
 
-.side-bar-card .flag{
+.side-bar-card .flag {
   font-size: 25px;
   margin-bottom: 20px
 }
 
-.side-bar-card .card-title{
+.side-bar-card .card-title {
   font-size: 20px;
   font-weight: 600;
   padding: 0 15px;
 }
 
-.side-bar-card .list .list-item .title{
+.side-bar-card .list .list-item .title {
   font-size: 15px;
   padding: 10px 0;
 }
 
-.side-bar-card .list .list-item{
+.side-bar-card .list .list-item {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.card-body .list .list-item:hover{
+.card-body .list .list-item:hover {
   background: rgba(0, 0, 0, .1);
 }
 
-.news-title{
+.news-title {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.news-status{
+.news-status {
   color: #999
 }
 
-.news-status .label{
+.news-status .label {
   opacity: 0.7
 }
 
-.news-content{
+.news-content {
   margin-top: 10px;
   line-height: 1.5;
   font-size: 18px;
 }
 
-.news-content img{
+.news-content img {
   margin: 10px 0;
 }
 
-.footer-content{
+.footer-content {
   margin: 10px 0;
   text-align: center;
   font-size: 10px;
@@ -130,10 +130,35 @@ a:hover {
 }
 
 /* 登录页 */
-.container-small{
+.container-small {
   max-width: 500px;
 }
 
-h1{
+h1 {
   text-align: center;
+}
+
+/* 登录按钮的颜色 */
+.btn-primary {
+  background: #e52e3b;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #bb0916
+}
+
+#toggle-menu {
+  display: inline-block;
+  right: 5px;
+  top: 5px;
+  position: absolute;
+}
+
+#toggle-checkbox {
+  display: none;
+}
+
+#toggle-checkbox:checked~div {
+  display: block !important;
 }
