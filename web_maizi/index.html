@@ -10,6 +10,7 @@
   <!-- 导入bootstrap.css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.main.css">
+  <link rel="stylesheet" href="css/animate.css">
   <title>项目实战</title>
 </head>
 
@@ -43,6 +44,7 @@
           <li><a href="#bbs">论坛</a></li>
           <li><a href="#h5">前端开发</a></li>
           <li><a href="#course">课程</a></li>
+          <li><a href="#contact">联系我们</a></li>
         </ul>
       </div>
     </div>
@@ -55,7 +57,7 @@
     <div class="filter">
       <!-- 内容显示 -->
       <div class="container">
-        <div class="row">
+        <div class="row wow fadeInUp">
           <div class="col-md-1"></div>
           <div class="col-md-10">
             <h1>the First Page Title</h1>
@@ -73,7 +75,7 @@
 
   <!-- 第二个屏幕显示 -->
   <section id="bbs">
-    <div class="container">
+    <div class="container wow fadeInUp">
       <div class="col-md-4">
         <a href="http://www.baidu.com" target="_blank">
           <img src="images/android.png" class="img-responsive" alt="">
@@ -100,12 +102,12 @@
   <!-- 第三个屏幕显示 -->
   <section id="h5">
     <div class="container">
-      <div class="col-md-6">
+      <div class="col-md-6 wow fadeInLeft">
         <h3>前端开发</h3>
         <p><span class="glyphicon glyphicon-grain"></span>展现自适应效果</p>
         <p><span class="glyphicon glyphicon-grain"></span>展现自适应效果</p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 wow fadeInRight">
         <img src="images/holder.png" class="img-responsive" alt="">
       </div>
     </div>
@@ -115,7 +117,7 @@
 
   <!-- 第四个屏幕 -->
   <section id="course">
-    <div class="container">
+    <div class="container wow fadeIn" data-wow-delay="0.6s">
       <h3>课程</h3>
       <div class="col-md-3">
         <div class="course-item">
@@ -152,12 +154,12 @@
   <section id="contact">
     <div class="filter">
       <div class="container">
-        <div class="col-md-6">
+        <div class="col-md-6 wow fadeInLeft">
           <h2>联系人</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 wow fadeInRight">
           <form action="index.html" method="post">
 
             <div class="form-group">
@@ -197,6 +199,24 @@
   <!-- bootstrap的js依赖于jquery,所以要先加载jquery -->
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <!-- 添加移动偏移量 -->
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/wow.min.js"></script>
+<script>
+  $(function(){
+    // 页面移动
+    $('.nav').singlePageNav({
+      offset:70
+    })
+  })
+  // 小屏幕下导航栏点击隐藏
+  $('.navbar-collapse a').click(function(){
+    $('.navbar-collapse').collapse('hide');
+  })
+
+  new WOW().init();
+
+</script>
 </body>
 
 </html>

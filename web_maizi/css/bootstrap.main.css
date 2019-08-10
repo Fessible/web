@@ -131,7 +131,8 @@ body {
   background-size: cover;
 }
 
-#contact h2,p{
+#contact h2,
+#contact p{
   color: #ffffff;
 }
 
